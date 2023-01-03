@@ -1,0 +1,57 @@
+.about {
+  background: $bg-color-light;
+  padding: 3rem 0 10rem;
+}
+
+.about__container h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: $tx-color-secondary;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 9.375rem;
+    height: 0.25rem;
+    background: $color-danger;
+    margin: 0 1rem 1.2rem 0;
+  }
+}
+
+.about__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+
+  p {
+    font-size: 1.5rem;
+    color: $tx-color-secondary;
+  }
+}
+
+
+// Media queries \\
+
+@media screen and (max-width: 70.5rem) {
+  .about__text {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 48rem) {
+
+  .about__container h2 {
+    font-size: 2.3rem;
+
+    &:before {
+      width: 5rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .about__text p {
+    font-size: 1.2rem;
+  }
+}

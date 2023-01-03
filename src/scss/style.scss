@@ -1,0 +1,42 @@
+@import 'fonts';
+@import './variables';
+@import './reset';
+@import './nav';
+@import './header';
+@import './about';
+@import './mainCatalog';
+@import './contact';
+@import './footer';
+
+@import './fullCatalog';
+
+// 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  width: $container-lg;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.8rem 1.5625rem;
+  color: $btn-color;
+  font-weight: 700;
+  background: $btn-bg-color;
+
+  border-radius: 0.9375rem;
+
+  border: 2px solid transparent;
+  transition: $transition;
+
+  &:hover {
+    background: transparent;
+    border-color: $color-danger;
+  }
+}

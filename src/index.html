@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include("html/head.html", { "title": "Turbo Plast" })
+  <body>
+    <!-- Header -->
+    @@include("html/header.html", {})
+
+    <!-- Main -->
+    <main>
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="container about__container">
+          <h2>О нас</h2>
+
+          <div class="about__text">
+            <p>
+              <b>Компания Turbo Plast</b> расположенная в промышленном районе
+              Самарканда, начала свою деятельность как небольшое
+              производственное подразделение компании <b>SAG Agro Group</b>.
+              Благодаря неустанному вниманию к исследованиям и разработкам,
+              щепетильному отношению к качеству, квалифицированному и опытному
+              персоналу, сегодня это полностью интегрированное производственное
+              подразделение специализированных ирригационных систем,
+              инновационных высокотехнологичных продуктов
+              <b>для капельного орошения</b>.
+            </p>
+
+            <p>
+              <b>Turbo Plast</b>, является лидером по качеству производства
+              технологий с использованием воды, которые решают проблемы и
+              <b>повышают производительность</b>, защищая при этом окружающую
+              среду и сохраняя водные ресурсы. Партнёрами компании являются
+              <b>ведущие турецкие компании</b> в области капельного орошения и
+              микроклимата. Системы капельного полива изготавливаются из
+              высококачественного первичного сырья и постоянного контроля
+              качества.
+            </p>
+
+            <p>
+              У нас вы можете приобрести капельные линии, трубы, краны и
+              соединители, капельницы, компрессионные фитинги, шаровые краны,
+              дисковые фильтры, насосы и другие аксессуары для организации
+              систем орошения.
+            </p>
+
+            <p>
+              <b>Turbo Plast</b> планирует осуществить полномасштабную работу по
+              облегчению задач для каждого фермерского хозяйства.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalog -->
+      <section class="catalog" id="catalog">
+        <div class="container catalog__container">
+          <h2>Каталог</h2>
+
+          <div class="catalog__cards">
+            <div class="catalog__cards-item">
+              <div class="cards-item-top">
+                <img src="@img/catalog-image.png" alt="" />
+                <span>Категория</span>
+              </div>
+
+              <div class="card__bot">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia quis, placeat dolore modi perspiciatis in alias! Iure
+                  illum vel adipisci molestias quo facere odit quibusdam!
+                  Tempora?
+                </p>
+
+                <a href="/" class="btn catalog__btn">ПОДРОБНЕЕ</a>
+              </div>
+            </div>
+
+            <div class="catalog__cards-item">
+              <div class="cards-item-top">
+                <img src="@img/catalog-image.png" alt="" />
+                <span>Категория</span>
+              </div>
+
+              <div class="card__bot">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia quis, placeat dolore modi perspiciatis in alias! Iure
+                  illum vel adipisci molestias quo facere odit quibusdam!
+                  Tempora?
+                </p>
+
+                <a href="/" class="btn catalog__btn">ПОДРОБНЕЕ</a>
+              </div>
+            </div>
+
+            <div class="catalog__cards-item">
+              <div class="cards-item-top">
+                <img src="@img/catalog-image.png" alt="" />
+                <span>Категория</span>
+              </div>
+
+              <div class="card__bot">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia quis, placeat dolore modi perspiciatis in alias! Iure
+                  illum vel adipisci molestias quo facere odit quibusdam!
+                  Tempora?
+                </p>
+
+                <a href="/" class="btn catalog__btn">ПОДРОБНЕЕ</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="./catalog.html" class="see-all">Просмотреть весь каталог...</a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h3>Заполните форму и мы с Вами свяжемся</h3>
+        <div class="container contact__container">
+          <form action="https://formspree.io/f/mlekrvge" method="POST">
+           <div class="form__inner">
+            <div class="form__item">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Ваше имя..."
+                required
+              />
+            </div>
+            <div class="form__item">
+              <input
+                type="tel"
+                name="Phone number"
+                placeholder="+998 (91) 123 45 67"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <input
+                name="Question"
+                type="text"
+                placeholder="Ваш вопрос..."
+              />
+            </div>
+           </div>
+
+            <button class="btn contact-btn">Оставить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    @@include("html/footer.html", {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

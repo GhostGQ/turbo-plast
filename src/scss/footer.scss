@@ -1,0 +1,172 @@
+footer {
+  position: relative;
+  background: $bg-color-light-blue;
+  padding: 2rem;
+  color: $tx-color-thirtly;
+
+  &::before {
+    content: '';
+    width: 22%;
+    min-width: 18rem;
+    height: 18.75rem;
+    background: $bg-color-light;
+    z-index: 0;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 1.5625rem 1.5625rem 0;
+
+    box-shadow: 0.9375rem 0 0.625rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__col1 {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  position: relative;
+  width: 100%;
+  min-width: 16rem;
+  height: 100%;
+}
+
+.footer__col2 {
+  h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact__phone img {
+  width: 1.5rem;
+}
+
+.contact__phone,
+.contact__email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+.footer__col2-mail {
+  margin-top: 2rem;
+}
+
+.footer__col3 {
+  border-radius: 1rem;
+
+  iframe {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 25rem;
+    height: 17.1875rem;
+  }
+
+  span {
+    text-align: right;
+    display: block;
+    padding-top: 1rem;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Media queries \\
+
+@media screen and (max-width: 70.5rem) {
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer::before {
+    min-width: 24rem;
+    height: 17rem;
+
+    top: 10rem;
+  }
+
+  .footer__col1 {
+    width: 86%;
+    gap: 6rem;
+    margin: 0 auto;
+  }
+
+  .footer__col3 {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+
+    iframe {
+      width: 100%;
+      max-width: 40rem;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  footer {
+    padding: 1rem;
+
+    &::before {
+      width: 13rem;
+      min-width: 0;
+      height: 13rem;
+      left: 49%;
+      top: 16%;
+      transform: translate3d(-50%, -50%, 0);
+      border-radius: 50%;
+    }
+  }
+
+  .footer__col1 {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .footer__col2 {
+
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .footer__logo img {
+    margin: 0 auto;
+  }
+
+  .contact__phone,
+  .contact__email {
+    gap: 0.5rem;
+
+    a {
+      font-size: 1.1rem;
+    }
+  }
+
+
+  iframe {
+    width: 10rem;
+    height: 300px;
+  }
+}
