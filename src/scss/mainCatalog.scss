@@ -7,17 +7,6 @@
 
 .catalog__container h2 {
   color: $tx-color-primary;
-  font-size: 4rem;
-  margin-bottom: 3rem;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    width: 9.375rem;
-    height: 0.25rem;
-    background: $color-danger;
-    margin: 0 1rem 1.2rem 0;
-  }
 }
 
 .catalog__cards {
@@ -73,9 +62,9 @@
   margin-top: 3rem;
   position: absolute;
   bottom: 2rem;
-  right: 16%;
+  right: 15%;
 
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   color: $tx-color-thirtly;
   text-decoration: underline;
   text-align: right;

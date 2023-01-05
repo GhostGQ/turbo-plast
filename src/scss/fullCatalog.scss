@@ -1,0 +1,170 @@
+.full-catalog {
+  background: $bg-color-dark-blue;
+  color: $tx-color-primary;
+  padding: 7rem 0;
+
+  h2 {
+    text-align: center;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 30%;
+      height: 0.3rem;
+      background: $color-danger;
+      margin: 0 2rem 1rem 0;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 30%;
+      height: 0.3rem;
+      background: $color-danger;
+      margin: 0 0 1rem 2rem;
+    }
+  }
+}
+
+.catalog__category {
+  margin-top: 6.5rem;
+}
+
+.catalog__category-text {
+
+  h3 {
+    font-size: 3rem;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 7.5rem;
+      height: 0.2rem;
+      background: $color-danger;
+      margin: 0 1rem 1rem 0;
+    }
+  }
+
+  p {
+    width: 80%;
+    font-size: 1.25rem;
+    margin: 2.5rem 0 5.5rem;
+  }
+}
+
+.catalog__category-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem 6rem;
+}
+
+.catalog__category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  background: $bg-color-light-blue;
+  padding-bottom: 1.6rem;
+  border-radius: 1rem;
+
+  img {
+    width: 284px;
+    height: 237px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  h4 {
+    width: 100%;
+    max-width: 15.6rem;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    font-size: 1.7rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 80%;
+      height: 0.1rem;
+      background: $bg-color-light;
+
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.col {
+  margin: 0.8rem 0 0 0.7rem;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+
+  span {
+    width: 6.3rem;
+    font-size: 1.1rem;
+    display: inline-block;
+  }
+
+  p {
+    display: inline-block;
+    width: 9rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 70.5rem) {
+
+  .full-catalog h2 {
+    font-size: 3.5rem;
+    &:before {
+      width: 20%;
+      margin-bottom: 0.8rem;
+    }
+
+    &:after {
+      width: 20%;
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 48rem) {
+
+  .full-catalog h2 {
+    font-size: 3.5rem;
+    &:before {
+      width: 0;
+    }
+
+    &:after {
+      width: 0;
+    }
+  }
+
+  .catalog__category {
+    margin-top: 3rem;
+  }
+
+  .catalog__category-text {
+
+    h3 {
+      font-size: 2.2rem;
+  
+      &:before {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        margin-bottom: 0.45rem;
+      }
+    }
+
+    p {
+      margin-left: 8%;
+    }
+  }
+}

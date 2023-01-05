@@ -4,18 +4,7 @@
 }
 
 .about__container h2 {
-  font-size: 4rem;
-  margin-bottom: 3rem;
   color: $tx-color-secondary;
-
-  &:before {
-    content: '';
-    display: inline-block;
-    width: 9.375rem;
-    height: 0.25rem;
-    background: $color-danger;
-    margin: 0 1rem 1.2rem 0;
-  }
 }
 
 .about__text {

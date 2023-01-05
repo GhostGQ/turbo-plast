@@ -40,3 +40,20 @@ body {
     border-color: $color-danger;
   }
 }
+
+.dash {
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 9.375rem;
+    height: 0.25rem;
+    background: $color-danger;
+    margin: 0 1rem 1.2rem 0;
+  }
+}
+
+.section-title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
